@@ -11,6 +11,14 @@ const DB = path.join(__dirname, "../users.json");
 const getUsers = () => JSON.parse(fs.readFileSync(DB, "utf-8"));
 const saveUsers = (users) => fs.writeFileSync(DB, JSON.stringify(users, null, 2));
 
+router.get("/register", (req, res) => {
+  res.json({ message: "Use POST /api/auth/register to create an account" });
+});
+
+router.get("/login", (req, res) => {
+  res.json({ message: "Use POST /api/auth/login to sign in" });
+});
+
 // REGISTER
 router.post("/register", async (req, res) => {
   const { username, password } = req.body;
