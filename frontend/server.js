@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(join(__dirname, 'dist')));
 
 // SPA fallback: serve index.html for any route that's not a file
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(join(__dirname, 'dist', 'index.html'));
 });
 
