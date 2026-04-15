@@ -6,7 +6,7 @@ This project demonstrates secure login/registration flow, protected routes, and 
 ---
 
 ## 🚀 Live Demo
-*https://auth-system-delta-one.vercel.app/login*  
+*https://auth-system-delta-one.vercel.app*  
 
 ---
 
