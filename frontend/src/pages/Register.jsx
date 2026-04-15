@@ -10,7 +10,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/auth/register", form);
+      await axios.post("https://auth-system-production-3f4c.up.railway.app/api/auth/register", form);
       navigate("/login");
     } catch (err) {
       setMsg(err.response?.data?.message || "Error");
